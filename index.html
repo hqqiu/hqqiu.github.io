@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=980" />
+  <title>Haiquan Qiu</title>
+  <meta name="description" content="Haiquan Qiu's academic homepage and research overview." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <main class="page" id="main-content">
+    <header class="profile">
+      <figure class="portrait-frame">
+        <img class="portrait" src="me.jpg" alt="Portrait of Haiquan Qiu" width="132" height="132" />
+      </figure>
+
+      <div class="profile-text">
+        <h1>Haiquan Qiu</h1>
+        <p class="role">Ph.D. Student, Department of Electronic Engineering, Tsinghua University</p>
+        <p class="email"><strong>Email:</strong> <span class="todo">qhq22 [at] mails [dot] tsinghua [dot] edu [dot] cn</span></p>
+        <nav class="profile-links" aria-label="Academic profiles">
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=JoumqGMAAAAJ">Google Scholar</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://github.com/ucker">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <div class="prose">
+        <p>
+          I started my Ph.D. study in the Department of Electronic Engineering at Tsinghua
+          University in 2022, advised by Associate Prof. <a href="https://lars-group.github.io/">Quanming Yao</a>.
+          I received my M.S. in Mathematics from Xi'an Jiaotong University and my B.S.
+          in Mathematics from Soochow University. During my master's study, I was advised
+          by Prof. <a href="https://scholar.google.com/citations?user=an6w-64AAAAJ&amp;hl=en">Deyu Meng</a>
+          and Prof. <a href="https://yaowang15.github.io/">Yao Wang</a>. My background in mathematics and engineering informs
+          my interest in the foundations of modern deep learning.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p class="section-intro">
+        My research studies the interplay between architecture, representation, and
+        optimization in modern deep learning. I am especially interested in the gap
+        between what neural networks can express in principle and how reliably they can
+        learn, propagate information, compose capabilities, and maintain useful
+        representations in practice. This motivation has led me from reasoning
+        expressivity to information propagation, capability representation and
+        composition, and training dynamics, with the goal of turning empirical phenomena
+        into analyzable mechanisms for building more reliable, efficient, and
+        generalizable AI systems.
+      </p>
+      <p class="selected-note">Selected works are organized by the evolution of my research interests.</p>
+
+      <div class="paper-list">
+        <article class="paper">
+          <div class="paper-aside">
+            <p class="paper-year">2022–2023</p>
+            <p class="paper-theme">Reasoning and expressivity</p>
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title">
+              <a href="https://openreview.net/forum?id=43cYe4oogi">Understanding Expressivity of GNN in Rule Learning</a>
+            </h3>
+            <p class="authors"><strong>Haiquan Qiu</strong>, Yongqi Zhang, Yong Li, Quanming Yao</p>
+            <p class="publication-meta">
+              <span class="venue">ICLR 2024</span>
+              <a href="https://arxiv.org/abs/2303.12306">arXiv</a>
+              <a href="https://github.com/LARS-research/Rule-learning-expressivity">Code</a>
+            </p>
+            <p class="desc">
+              This work asks what kinds of rules neural architectures can represent and
+              learn. It studies the expressivity of message-passing models for rule learning
+              and connects observed reasoning performance with analyzable structural
+              conditions.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="paper-aside">
+            <p class="paper-year">2023–2024</p>
+            <p class="paper-theme">Information propagation</p>
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title">
+              <a href="https://openreview.net/forum?id=dvNMDkSBIA">Graph Unitary Message Passing</a>
+            </h3>
+            <p class="authors"><strong>Haiquan Qiu</strong>, Yatao Bian, Quanming Yao</p>
+            <p class="publication-meta">
+              <span class="venue">TMLR 2026</span>
+              <a href="https://arxiv.org/abs/2403.11199">arXiv</a>
+              <a href="https://github.com/ucker/gump_code">Code</a>
+            </p>
+            <p class="desc">
+              This work examines why expressivity alone is insufficient when information
+              cannot travel effectively through a neural architecture. It studies how
+              architectural choices shape long-range information flow and signal
+              preservation.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="paper-aside">
+            <p class="paper-year">2024–2025</p>
+            <p class="paper-theme">Capability representation and composition</p>
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title">
+              <a href="https://aclanthology.org/2025.emnlp-main.210/">Superpose Task-specific Features for Model Merging</a>
+            </h3>
+            <p class="authors"><strong>Haiquan Qiu</strong>, You Wu, Dong Li, Jianmin Guo, Quanming Yao</p>
+            <p class="publication-meta">
+              <span class="venue">EMNLP 2025 (Oral)</span>
+              <a href="https://arxiv.org/abs/2502.10698">arXiv</a>
+              <a href="https://github.com/LARS-research/STF">Code</a>
+            </p>
+            <p class="desc">
+              This work studies model merging from a feature perspective and preserves
+              task-specific feature directions so that a merged model can better retain
+              multiple skills. It suggests that successful capability composition depends
+              on keeping the underlying representations distinct and stable.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="paper-aside">
+            <p class="paper-year">2025–2026</p>
+            <p class="paper-theme">Training dynamics and reliability</p>
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title">
+              <a href="https://openreview.net/forum?id=0jHyEKHDyx">Why Low-Precision Transformer Training Fails: An Analysis on Flash Attention</a>
+            </h3>
+            <p class="authors"><strong>Haiquan Qiu</strong>, Quanming Yao</p>
+            <p class="publication-meta">
+              <span class="venue">ICLR 2026 (Oral)</span>
+              <a href="https://arxiv.org/abs/2510.04212">arXiv</a>
+              <a href="https://github.com/ucker/why-low-precision-training-fails">Code</a>
+            </p>
+            <p class="desc">
+              This work shifts from composing trained capabilities to understanding how
+              useful representations form and fail during optimization. It explains why
+              low-precision Transformer training can become unstable by connecting
+              representation patterns with numerical errors in Flash Attention.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <p class="note">
+        For other publications, please see my
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=JoumqGMAAAAJ">Google Scholar</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p>Last updated: June 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
