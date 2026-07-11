@@ -30,8 +30,8 @@ body {
 }
 
 .page {
-  width: 860px;
-  margin: 0 auto;
+  width: min(860px, calc(100% - 40px));
+  margin-inline: auto;
   padding: 48px 0 56px;
 }
 
@@ -151,7 +151,9 @@ h2 {
 .prose,
 .section-intro,
 .desc {
+  width: 100%;
   max-width: 760px;
+  margin-inline: auto;
   text-align: justify;
   text-align-last: left;
   hyphens: auto;
@@ -266,4 +268,35 @@ footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(100% - 32px, 860px);
+    padding: 32px 0 40px;
+  }
+
+  .profile {
+    align-items: flex-start;
+  }
+
+  .portrait {
+    width: 112px;
+    height: 112px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .portrait {
+    width: 132px;
+    height: 132px;
+  }
 }
